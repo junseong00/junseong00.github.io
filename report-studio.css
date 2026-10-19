@@ -1,0 +1,17 @@
+/* Screen-readable companion to the separately typeset v7 PDF. */
+:root{--paper:#f6f7f2;--ink:#17241f;--muted:#59655e;--accent:#275c45;--soft:#edf0e7;--tint:#deeeab;--line:#d1d8cf;--serif:var(--sans)}
+body{background:#e9eee5}.book-sheet{background:var(--paper)}
+.cover-sheet{padding:0;background:#f6f7f2}
+.minimal-cover-content{position:absolute;left:20mm;right:20mm;top:76mm}
+.minimal-cover-kicker{font:400 11px/1.8 var(--sans);letter-spacing:2px;color:var(--muted)}
+.minimal-cover h1{font:400 58px/1.25 var(--sans);letter-spacing:-2px;color:var(--accent);margin:24px 0 35px}
+.minimal-cover-name{font:400 22px/1.8 var(--sans);color:var(--ink)}
+.book-heading h1,.row-content>.row-lead{font-family:var(--sans)}
+.book-totals strong,.validation-highlights strong{font-family:Arial,sans-serif;font-weight:400}
+.diagram-model,.validation-highlights{background:var(--tint);color:var(--ink)}
+.diagram-model span,.validation-highlights p{color:var(--muted)}
+.validation-highlights strong{color:var(--accent)}
+.toc-grid{display:block;margin-top:24px}.toc-group{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line);min-height:130px;align-items:center}
+.toc-domain{min-height:0;margin-bottom:9px;font-size:9px}.toc-group h2{font:700 19px/1.6 var(--sans);min-height:0}.toc-group a{font-size:11px;margin:0;padding:9px 0}.toc-summary>p:last-child{font-size:11px;margin-top:8px}
+@media screen and (max-width:800px){.minimal-cover-content{left:24px;right:24px;top:170px}.minimal-cover h1{font-size:39px}.toc-group{display:block;min-height:0}.toc-pages{margin-top:15px}}
+@media print{body{background:#fff}}
